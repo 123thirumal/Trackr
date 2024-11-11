@@ -1,0 +1,543 @@
+body{
+    background-color: rgb(221, 212, 212);
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/*login-page*/
+.loginpage {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}  
+.loginpage h1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    font-family: "kodchasan";
+    font-weight: 500;
+    transform: scaleY(1.2);
+    font-size: 30px;
+}  
+.LoginBox {
+    background: white;
+    min-height: 300px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LoginBox h2{
+    font-family: 'Kodchasan';
+    font-size: 30px;
+    font-weight:500;
+}  
+.LoginBox input {
+    margin: 10px 0;
+    font-family: 'Kodchasan';
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    border: 2px solid rgb(221, 212, 212);
+    border-color: rgb(221, 212, 212);
+}
+.LoginBox input:focus{
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Kodchasan';
+    font-weight: bolder;
+    width: 270px;
+    border-radius: 20px;
+    border-color: black;
+}
+.LoginBox button{
+    margin: 20px 0;
+    font-family: 'Kodchasan';
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 80px;
+    background-color: rgb(221, 212, 212);
+    border: none;
+}
+.LoginBox button:hover{
+    margin: 20px 0;
+    font-family: 'Kodchasan';
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 80px;
+    background-color: rgb(221, 212, 212);
+    border: 2px solid rgb(152, 150, 150);
+    cursor: pointer;
+}
+
+
+/*getstarted*/
+.getstarted{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory; 
+    overflow-y: scroll;
+}
+.getstarted .first-page{
+    height: 100vh;
+}
+.getstarted .first-page .navbar {
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-color: rgb(221, 212, 212);
+    padding-left: 30px;
+    font-family: 'Abril Fatface';
+    font-size: 24px;
+    max-height: 70px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.getstarted .first-page .nav-link {
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+.getstarted .first-page .nav-link:hover {
+    background-color: rgb(221, 212, 212);
+    border-radius: 20px;
+}
+.getstarted .first-page .navbar-right{
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 10px;
+}
+.getstarted .first-page .navbar-right p{
+    font-family: "kodchasan";
+    font-weight: 500;
+    transform: scaleY(1.2);
+    font-size: 30px;
+}
+.getstarted .first-page .navbar-right button{
+    font-family: "kodchasan";
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 2px solid rgb(205, 205, 205);
+    background-color: black;
+    font-weight: 500;
+    color:white
+}
+.getstarted .first-page .navbar-right button:hover{
+    font-family: "kodchasan";
+    border: 2px solid rgb(205, 205, 205);
+    background-color: black;
+    font-weight: 500;
+    color:white;
+    cursor: pointer;
+}
+.getstarted .first-page .title{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.getstarted .first-page .title h1{
+    font-size: 55px;
+    margin: 10px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+}
+.getstarted .first-page .title h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.getstarted .first-page .title h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 45px;
+    position: relative;
+    margin-left: 18vw;
+    align-self: start;
+}
+.getstarted .first-page .title .video-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+.getstarted .first-page .title .video-container video{
+    object-fit: cover;
+}
+.getstarted .first-page .title .video-container .vidText{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;    
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    mix-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.getstarted .first-page .title .video-container .vidText h1{
+    font-size: 250px;
+}
+.getstarted .content{
+    position: relative;
+}
+.getstarted .content h1{
+    color: white;
+    font-size: 90px;
+    max-width: 800px; /* Adjust this value as needed */
+    text-align: center; /* Optional, to center the text */
+    width: 100%; /* Ensures responsiveness */
+}
+.getstarted .content p{
+    color: white;
+    font-size: 40px;
+    max-width: 800px; /* Adjust this value as needed */
+    text-align: center; /* Optional, to center the text */
+    width: 100%; /* Ensures responsiveness */
+}
+.getstarted .content .first,.second{
+    scroll-snap-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+.getstarted .content .first *,.content .second *,.content .third *{
+    margin: 0;
+    padding: 10px;
+}
+.getstarted .content .third{
+    scroll-snap-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+.getstarted .content .third-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.getstarted .content .third-1 *{
+    margin: 0;
+    padding: 10px;
+}
+.getstarted .content .third button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    font-family: "kodchasan";
+    font-size: 14px;
+    border: 2px solid rgb(205, 205, 205);
+    background-color: black;
+    font-weight: 500;
+    color:white
+}
+.getstarted .content .third button *{
+    margin: 0;
+    padding: 0;
+}
+.getstarted .content button:hover{
+    cursor: pointer;
+}
+
+
+
+/*homepage*/
+.homepage{
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    gap: 10px;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.arrow svg {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.homepage .expense-graph{
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents overflow */
+
+}
+.homepage .expense-graph p{
+    padding: 20px;
+    color: white;
+    font-family: 'Alata';
+    font-size: 20px;
+    margin: 0;
+}
+.homepage .expense-graph .chart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex: 1; /* Ensures the chart takes up remaining space */
+    overflow-y: hidden;
+}
+.homepage .expense-graph * {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+.homepage .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: 'Kodchasan';
+    border-radius: 20px;
+    font-weight: 500;
+    transform: scaleY(1.2);
+    font-size: 30px;
+}
+.homepage .recent-trans{
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Alata';
+    font-size: 20px;
+    padding-left: 20px;
+}
+.homepage .stats{
+    position: relative;
+    background-color: black;
+    padding: 0px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Alata';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.homepage .stats * {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+.homepage .stats .heading{
+    margin-left: 20px;
+}
+.homepage .stats .stat-elem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.homepage .stats .stat-elem .stat-elem-ind{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 0;
+}
+.homepage .stats .stat-elem .stat-elem-ind * {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+.homepage .budgets{
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Alata';
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+
+/*recent Transaction*/
+.recentTransPage{
+    overflow-y: scroll;
+    margin: 0;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Kodchasan';
+}
+.recentTransPage .navbar{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.recentTransPage .navbar p{
+    margin-left: auto;
+    font-family: "kodchasan";
+    font-weight: 500;
+    transform: scaleY(1.2);
+    font-size: 30px;
+}
+.recentTransPage .navbar *{
+    padding: 0;
+    margin: 0;
+}
+.recentTransPage .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recentTransPage .content *{
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+.recentTransPage .content h1{
+    font-size: 45px;
+    font-weight: 420;
+}
+.recentTransPage .content .filter{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.recentTransPage .content .filter input{
+    background-color: rgb(181, 172, 172);
+    border-radius: 50px;
+    width: 190px;
+    outline: none;
+    padding: 17px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    border: 0;
+    font-family: 'Kodchasan';
+}
+.recentTransPage .content .filter input::placeholder {
+    color: rgb(56, 54, 54); /* Adjust the color and opacity */
+}
+.recentTransPage .content table {
+    width: 100%;
+    border-collapse:separate; /* Removes gaps between borders */
+    border-spacing: 0;
+    padding: 0 15px 15px 15px;
+}
+.recentTransPage .content th{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 550;
+    padding: 0 20px 20px 20px;
+} 
+.recentTransPage .content td {
+    text-align: center;
+    padding: 14px; /* Add padding for spacing */
+    font-size: 20px;
+    font-weight: 470;
+    color: rgb(0, 0, 0);
+}
+.recentTransPage .content tbody tr{
+    background-color: rgb(181, 172, 172);
+}
+.recentTransPage .content tbody tr:first-child td:first-child{
+    border-radius: 20px 0 0 0;
+}
+.recentTransPage .content tbody tr:first-child td:last-child{
+    border-radius: 0 20px 0 0;
+}
+.recentTransPage .content tbody tr:last-child td:first-child{
+    border-radius:  0 0 0 20px;
+}
+.recentTransPage .content tbody tr:last-child td:last-child{
+    border-radius: 0 0 20px 0;
+}
+
+.recentTransPage .content tbody tr td:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+.recentTransPage .content tbody tr td:nth-child(4) div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(58, 165, 41); 
+    border-radius: 20px;
+    justify-content: center; 
+    padding: 3px;
+    padding-right: 15px;
+    color: white;
+    font-size: 20px;
+    width:fit-content;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
